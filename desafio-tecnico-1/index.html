@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escribo - Desafio Técnico 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+        <header class="header-content">
+            <h1>Escribo</h1>
+            <h4 style="color: rgb(146, 146, 146);">Desafio Técnico 1</h4>
+        </header>
+
+
+        <main class="main">
+            <div class="main-container">
+                <div class="main-pergunta">
+                    <input id="inputValor" type="text" placeholder="Número inteiro positivo" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    <button id="buttonSomar" onclick="fazerSoma()">SOMAR</button>
+                </div>
+                <input type="text" id="retornoSoma">
+            </div>
+        </main>
+
+</body>
+<script src="./js/main.js"></script>
+
+</html>
